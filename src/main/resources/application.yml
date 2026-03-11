@@ -7,9 +7,8 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/fraudradar
-    username: fraudradar
+    username: postgres
     password: fraudradar123
-    driver-class-name: org.postgresql.Driver
 
   jpa:
     hibernate:
@@ -55,3 +54,7 @@ logging:
   level:
     com.fraudradar: DEBUG
     org.springframework.kafka: INFO
+
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.kafka.KafkaAutoConfiguration
