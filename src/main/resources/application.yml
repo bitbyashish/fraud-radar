@@ -7,7 +7,7 @@ spring:
 
   datasource:
     url: jdbc:postgresql://localhost:5432/fraudradar
-    username: postgres
+    username: fraudradar
     password: fraudradar123
 
   jpa:
